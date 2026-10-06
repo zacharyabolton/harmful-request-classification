@@ -4,7 +4,7 @@
     ".gitattributes": "ec9cf604136b913ccb0f323071296ec4730457da2c8da5ca9ec0371acda34c6f",
     ".gitignore": "2ad70dd2788438a8b15746582472828a88b7ecaad4f70f1cead3adca8dc4990e",
     "LICENSE": "1eafc31564074f5072497fddeb3b11ae9b8b4c8c48d19b74cae0fead0176c18c",
-    "README.md": "bc09d5c1f2dd43d036a9fea038419ad52d836f19d72ee14e9ec38a7ab5893d38",
+    "README.md": "47c0f16b93b3a093f38282794ff1ab5216df4d4ef4dbf8b8c61e13fb347f7385",
     "checks/acquisition-2026-10-06.json": "0b2f05970cedba13fab78939255cba92a305c958511e013a3c3151fa2908ae6e",
     "checks/colab-resources-2026-10-06.json": "e55e8159fae87462e4f86aa967bb8a49f00b96e6b5be562fffeddc28a0a0f1df",
     "checks/encoder-colab-2026-10-06.json": "03e09673c665439db342abfa7be5ebaf3fe78bf42fdbbbd6d8950bf100be8319",
