@@ -1,0 +1,9 @@
+{
+  "series": "wj-initial",
+  "historical_model": "tfidf",
+  "original_config_sha256": "565db875cb9e01607aea47ad7fe084b0f1864112c9de821fb2471c0e752c8717",
+  "model_files": {
+    "model.joblib": "26a1ab0f71a15371f6004a6b101a3ab7dd62e345815e5d0d0b2d0a29b7d04d0a"
+  },
+  "changes": "Inference metadata uses public experiment names. Model bytes and threshold are unchanged."
+}

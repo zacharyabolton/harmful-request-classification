@@ -1,0 +1,144 @@
+{
+  "source": {
+    "schema_version": 1,
+    "source": "allenai/wildjailbreak",
+    "revision": "5ddc12a7894f842b0619b8e1c7ee496b198af009",
+    "release": "train/train.tsv",
+    "files": {
+      "train/train.tsv": "376719bfdb46ad1a19e7ba4f587f80cc7cb1368cc213ee647ef739c170550f7a",
+      "README.md": "8261b7c07c2d8da292e546d2223560d679d4debb10667e28184ce989ac7d7b1a",
+      "NOTICE.txt": "1ded3d78d648cc9f74d83bbbf6b74fd288e7ba8a266dcd8d7af48243a11616c5"
+    },
+    "bytes": 530936617,
+    "seconds": 9.962487415992655,
+    "label_map": {
+      "vanilla_benign": 0,
+      "adversarial_benign": 0,
+      "vanilla_harmful": 1,
+      "adversarial_harmful": 1
+    },
+    "license": "ODC-BY-1.0",
+    "official_eval_used": false,
+    "parsed_rows": 261559,
+    "rejected_rows": {
+      "empty_feature_text": 21
+    },
+    "eligible_rows": 261538
+  },
+  "split_origin": "custom_grouped_training_release",
+  "splits": {
+    "train": {
+      "n": 4000,
+      "labels": {
+        "0": 2000,
+        "1": 2000
+      },
+      "categories": {
+        "unknown": 4000
+      },
+      "sources": {
+        "allenai/wildjailbreak": 4000
+      },
+      "source_types": {
+        "adversarial_benign": 1230,
+        "vanilla_benign": 770,
+        "adversarial_harmful": 1230,
+        "vanilla_harmful": 770
+      },
+      "groups": 3899,
+      "length_chars_min_median_p95_max": [
+        26.0,
+        607.0,
+        1435.0499999999997,
+        3588.0
+      ],
+      "missing_parent_ids": 0,
+      "missing_policy": 4000,
+      "truncated": 0
+    },
+    "validation": {
+      "n": 1000,
+      "labels": {
+        "0": 500,
+        "1": 500
+      },
+      "categories": {
+        "unknown": 1000
+      },
+      "sources": {
+        "allenai/wildjailbreak": 1000
+      },
+      "source_types": {
+        "vanilla_benign": 208,
+        "adversarial_benign": 292,
+        "adversarial_harmful": 317,
+        "vanilla_harmful": 183
+      },
+      "groups": 976,
+      "length_chars_min_median_p95_max": [
+        15.0,
+        589.5,
+        1465.7499999999984,
+        3749.0
+      ],
+      "missing_parent_ids": 0,
+      "missing_policy": 1000,
+      "truncated": 0
+    },
+    "test": {
+      "n": 1000,
+      "labels": {
+        "0": 500,
+        "1": 500
+      },
+      "categories": {
+        "unknown": 1000
+      },
+      "sources": {
+        "allenai/wildjailbreak": 1000
+      },
+      "source_types": {
+        "vanilla_benign": 197,
+        "adversarial_benign": 303,
+        "adversarial_harmful": 309,
+        "vanilla_harmful": 191
+      },
+      "groups": 975,
+      "length_chars_min_median_p95_max": [
+        27.0,
+        601.0,
+        1383.1999999999998,
+        3856.0
+      ],
+      "missing_parent_ids": 0,
+      "missing_policy": 1000,
+      "truncated": 0
+    }
+  },
+  "original_file_sha256": {
+    "NOTICE.txt": "1ded3d78d648cc9f74d83bbbf6b74fd288e7ba8a266dcd8d7af48243a11616c5",
+    "audit.json": "6ad24a78b2f38cb1d7ad35b36d17ea2dff376566a08a4136676d0a690c0d250d",
+    "source-records.jsonl": "2f26cbc33c524860692c22d873cd61885c94323a26929de1eeae8e27e10519a7",
+    "test.jsonl": "5e7bd1e48658859e58c5cea10801f3a4b98d28bad5d2944d94280733e20b5569",
+    "train.jsonl": "fba6fcf1c6d6d238a2f9df6a414475eb40ab4b422e0b1319be9352e9f2af081b",
+    "validation.jsonl": "638931f1fe2eea84db678fc06f357e59a9b298d94338c43ad93d4a646525a635"
+  },
+  "audit": {
+    "passes": [
+      {
+        "method": "8 rarest-token index, at most 256 postings/token; stable ID order",
+        "candidate_pairs": 91859,
+        "comparisons": 47052,
+        "cap": 2000000,
+        "exact_coverage": "all selected rows; entire eligible source linked before allocation",
+        "near_coverage": "nonexhaustive",
+        "seed": 42,
+        "cross_split_pairs": []
+      }
+    ],
+    "excluded_development_components": [],
+    "known_parent_and_exact_components": 99898,
+    "official_eval_used": false,
+    "source_level_exposure": "Public card examples previously viewed; exact exposed IDs unavailable; no semantic independence claim."
+  }
+}

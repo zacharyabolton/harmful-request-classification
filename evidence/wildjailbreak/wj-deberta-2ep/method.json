@@ -1,0 +1,78 @@
+{
+  "id": "wj-deberta-2ep",
+  "series": "wj-duration",
+  "settings": {
+    "schema_version": 1,
+    "seed": 42,
+    "max_chars": 12000,
+    "max_rows": 6000,
+    "max_features": 20000,
+    "C": 1.0,
+    "max_iter": 1000,
+    "solver": "liblinear",
+    "objective": "recall_at_fpr",
+    "max_fpr": 0.05,
+    "device": "cpu",
+    "encoder_device": "cuda",
+    "encoder_revision": "4b419818330868dff6a60ad3e6b1c730f8b8c0c6",
+    "fixture_only": false,
+    "model_options": {
+      "epochs": 2,
+      "batch_size": 8,
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "max_length": "auto",
+      "max_steps": null,
+      "max_stage_seconds": 1800,
+      "pilot_steps": 20
+    }
+  },
+  "diagnostics": {
+    "steps": 1000,
+    "planned_steps": 1000,
+    "completed_epochs": 2,
+    "examples_seen": 8000,
+    "settings": {
+      "epochs": 2,
+      "batch_size": 8,
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "max_length": "auto",
+      "max_steps": null,
+      "max_stage_seconds": 1800,
+      "pilot_steps": 20
+    },
+    "finite_gradients": true,
+    "parameter_updated": true,
+    "max_length": 512,
+    "length_audit": {
+      "n": 5000,
+      "over_256": 377,
+      "over_512": 10
+    },
+    "seconds": 264.60052637100034,
+    "device": "cuda",
+    "batch_size": 8
+  },
+  "experiment_stage_seconds": 287.3820332519999,
+  "original_experiment_sha256": "e0e2d67434509a760797a799cacedc3409cf4802cf201be5a18fe7d909d1309d",
+  "saved_weights_in_export": false,
+  "historical_runtime": {
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "core_dependencies": [
+      "huggingface-hub==0.34.4",
+      "joblib==1.5.2",
+      "numpy==2.2.6",
+      "protobuf==6.32.1",
+      "safetensors==0.6.2",
+      "scikit-learn==1.7.2",
+      "scipy==1.15.3",
+      "sentencepiece==0.2.1",
+      "threadpoolctl==3.6.0",
+      "tokenizers==0.22.2",
+      "torch==2.11.0+cu130",
+      "transformers==4.56.2"
+    ]
+  }
+}

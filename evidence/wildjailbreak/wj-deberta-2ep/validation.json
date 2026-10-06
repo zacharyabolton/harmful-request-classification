@@ -1,0 +1,28 @@
+{
+  "threshold": 0.5178803205490112,
+  "n": 1000,
+  "positives": 500,
+  "negatives": 500,
+  "confusion": {
+    "tn": 475,
+    "fp": 25,
+    "fn": 39,
+    "tp": 461
+  },
+  "precision": 0.948559670781893,
+  "recall": 0.922,
+  "f1": 0.9350912778904665,
+  "average_precision": 0.9864940990611372,
+  "fpr": 0.05,
+  "fpr_wilson_95": [
+    0.034093745243849435,
+    0.0727681611715476
+  ],
+  "recall_wilson_95": [
+    0.8951464501266115,
+    0.9424186065238385
+  ],
+  "one_class_slice": false,
+  "empty_slice": false,
+  "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+}

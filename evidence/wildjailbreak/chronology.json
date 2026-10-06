@@ -1,0 +1,126 @@
+{
+  "series": [
+    {
+      "id": "wj-initial",
+      "parent": null
+    },
+    {
+      "id": "wj-duration",
+      "parent": "wj-initial",
+      "same_splits": true,
+      "heldout_exposure": "previously-evaluated"
+    }
+  ],
+  "events": [
+    {
+      "series": "wj-initial",
+      "event": "selected",
+      "time_utc": "2026-10-03T18:45:47.493023+00:00",
+      "model": "wj-deberta-1ep",
+      "documented_reason": "Higher validation recall justified larger weights and measured inference cost."
+    },
+    {
+      "series": "wj-initial",
+      "event": "frozen",
+      "time_utc": "2026-10-03T18:45:50.829626+00:00",
+      "threshold": 0.5956808924674988,
+      "original_freeze_sha256": "c6e1a899e16454024ee66b316a08947314f31d6eb661605b19e7d531242b5e2b"
+    },
+    {
+      "series": "wj-initial",
+      "event": "evaluated_after_freeze",
+      "original_evaluation_sha256": "1566f555cdd3ad25e5b4c7c241b7a89028bee5c002d9715832b9fb278f2dcd9f",
+      "exposure": "First recorded evaluation; public source examples had already been viewed, with unknown IDs."
+    },
+    {
+      "series": "wj-duration",
+      "event": "planned",
+      "time_utc": "2026-10-03T20:23:24.261285+00:00",
+      "model": "wj-deberta-2ep",
+      "documented_hypothesis": "Longer fresh training may improve validation recall.",
+      "effective_settings": {
+        "seed": 42,
+        "max_chars": 12000,
+        "epochs": 2,
+        "batch_size": 8,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "max_length": "auto",
+        "max_steps": null,
+        "max_stage_seconds": 1800,
+        "pilot_steps": 20,
+        "checkpoint": "microsoft/deberta-v3-xsmall",
+        "revision": "4b419818330868dff6a60ad3e6b1c730f8b8c0c6",
+        "device": "cuda",
+        "initialization": "pretrained checkpoint; fresh optimizer (not resume)",
+        "length_policy": "auto: 512 if >5% of train+validation exceed 256 tokens; else 256"
+      }
+    },
+    {
+      "series": "wj-duration",
+      "event": "planned",
+      "time_utc": "2026-10-03T20:46:55.241369+00:00",
+      "model": "wj-deberta-6ep",
+      "documented_hypothesis": "Validation-based stopping may improve training duration.",
+      "effective_settings": {
+        "seed": 42,
+        "max_chars": 12000,
+        "epochs": 6,
+        "batch_size": 8,
+        "learning_rate": 2e-05,
+        "weight_decay": 0.01,
+        "max_length": "auto",
+        "max_steps": null,
+        "max_stage_seconds": 1800,
+        "pilot_steps": 20,
+        "early_stopping": {
+          "patience": 2,
+          "min_delta": 0
+        },
+        "checkpoint": "microsoft/deberta-v3-xsmall",
+        "revision": "4b419818330868dff6a60ad3e6b1c730f8b8c0c6",
+        "device": "cuda",
+        "initialization": "pretrained checkpoint; fresh optimizer (not resume)",
+        "length_policy": "auto: 512 if >5% of train+validation exceed 256 tokens; else 256",
+        "early_stopping_policy": {
+          "metric": "validation recall at empirical FPR <=5%",
+          "evaluation_frequency": "after each complete epoch",
+          "threshold": "reselected on validation each epoch",
+          "patience_reset": "recall exceeds previous best recall by more than min_delta",
+          "checkpoint_selection": "highest recall, then lower FPR, then earlier epoch",
+          "return_model": "best validation checkpoint, not last epoch",
+          "step_budget": "maximum; early stopping may use fewer steps"
+        }
+      }
+    },
+    {
+      "series": "wj-duration",
+      "event": "selected",
+      "time_utc": "2026-10-03T21:33:19.931235+00:00",
+      "model": "wj-deberta-6ep",
+      "documented_reason": "22 fewer validation harmful misses than two epochs, with 25 false positives each; comparable inference cost. Labels retained."
+    },
+    {
+      "series": "wj-duration",
+      "event": "frozen",
+      "time_utc": "2026-10-03T21:34:47.850096+00:00",
+      "threshold": 0.01567990332841873,
+      "original_freeze_sha256": "6f7ac2c699b3b57e06ab2a07653ec02b6687f7eafad5405a7851679e48035fc2"
+    },
+    {
+      "series": "wj-duration",
+      "event": "evaluated_after_freeze",
+      "original_evaluation_sha256": "61b1ca5a9a6e0c276cc636b9ef88a163cc6be275abf95e7adaca63c0d12e63a2",
+      "exposure": "Previously evaluated test rows inherited from wj-initial."
+    }
+  ],
+  "chronology_note": "Timestamped events use original UTC values. Evaluation completion records have no timestamp; freeze bindings establish order.",
+  "unexecuted": [
+    "Quantization",
+    "Contrastive learning",
+    "Additional training data",
+    "Label refinement",
+    "External-domain evaluation"
+  ],
+  "source_level_exposure": "Public dataset card examples were viewed before wj-initial. Exact IDs are unknown. Pretraining overlap was not established."
+}

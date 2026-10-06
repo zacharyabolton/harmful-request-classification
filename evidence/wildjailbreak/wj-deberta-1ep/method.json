@@ -1,0 +1,65 @@
+{
+  "id": "wj-deberta-1ep",
+  "series": "wj-initial",
+  "settings": {
+    "schema_version": 1,
+    "seed": 42,
+    "max_chars": 12000,
+    "max_rows": 6000,
+    "max_features": 20000,
+    "C": 1.0,
+    "max_iter": 1000,
+    "solver": "liblinear",
+    "objective": "recall_at_fpr",
+    "max_fpr": 0.05,
+    "device": "cpu",
+    "encoder_device": "cuda",
+    "encoder_revision": "4b419818330868dff6a60ad3e6b1c730f8b8c0c6",
+    "fixture_only": false
+  },
+  "diagnostics": {
+    "steps": 500,
+    "finite_gradients": true,
+    "parameter_updated": true,
+    "max_length": 512,
+    "length_audit": {
+      "n": 5000,
+      "over_256": 377,
+      "over_512": 10
+    },
+    "seconds": 145.10345854000002,
+    "device": "cuda",
+    "batch_size": 8
+  },
+  "experiment_stage_seconds": 168.43322727100008,
+  "original_experiment_sha256": "2e8675dbf5435f1a654ec6784699b978f5629c01b96664617e6f0270a88edf3e",
+  "saved_weights_in_export": false,
+  "historical_runtime": {
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "core_dependencies": [
+      "huggingface-hub==0.34.4",
+      "joblib==1.5.2",
+      "numpy==2.2.6",
+      "protobuf==6.32.1",
+      "safetensors==0.6.2",
+      "scikit-learn==1.7.2",
+      "scipy==1.15.3",
+      "sentencepiece==0.2.1",
+      "threadpoolctl==3.6.0",
+      "tokenizers==0.22.2",
+      "torch==2.11.0+cu130",
+      "transformers==4.56.2"
+    ]
+  },
+  "source_code_defaults": {
+    "checkpoint": "microsoft/deberta-v3-xsmall",
+    "optimizer": "AdamW",
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "batch_size": 8,
+    "steps_cap": 500,
+    "shuffle": "One torch.randperm over training rows.",
+    "length_rule": "512 if more than 5% of train and validation exceed 256 tokens; else 256."
+  }
+}

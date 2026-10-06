@@ -1,0 +1,23 @@
+{
+  "source": "allenai/wildjailbreak",
+  "revision": "5ddc12a7894f842b0619b8e1c7ee496b198af009",
+  "acquisition": "fresh temporary local_dir, HF Hub/Xet/assets caches; existing CLI authentication",
+  "release_bytes": 530920110,
+  "seconds": 49.65560595798888,
+  "source_sha256": "376719bfdb46ad1a19e7ba4f587f80cc7cb1368cc213ee647ef739c170550f7a",
+  "expected_source_sha256": "376719bfdb46ad1a19e7ba4f587f80cc7cb1368cc213ee647ef739c170550f7a",
+  "split_sha256": {
+    "train": "fba6fcf1c6d6d238a2f9df6a414475eb40ab4b422e0b1319be9352e9f2af081b",
+    "validation": "638931f1fe2eea84db678fc06f357e59a9b298d94338c43ad93d4a646525a635",
+    "test": "5e7bd1e48658859e58c5cea10801f3a4b98d28bad5d2944d94280733e20b5569"
+  },
+  "split_rows": {
+    "train": 4000,
+    "validation": 1000,
+    "test": 1000
+  },
+  "source_and_original_splits_match": true,
+  "official_eval_requested": false,
+  "cost_usd": 0,
+  "date_utc": "2026-10-06"
+}

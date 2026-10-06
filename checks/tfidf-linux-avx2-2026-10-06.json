@@ -1,0 +1,60 @@
+{
+  "python": "3.13.15",
+  "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+  "disabled_cpu_features": "AVX512F,AVX512CD,AVX512VL,AVX512BW,AVX512DQ,AVX512_SKX",
+  "enabled_cpu_features": [
+    "AVX",
+    "AVX2",
+    "AVX512BW",
+    "AVX512DQ",
+    "AVX512VL",
+    "F16C",
+    "FMA3",
+    "MMX",
+    "POPCNT",
+    "SSE",
+    "SSE2",
+    "SSE3",
+    "SSE41",
+    "SSE42",
+    "SSSE3"
+  ],
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "sklearn": "1.7.2",
+  "train_rows": 4000,
+  "validation_rows": 1000,
+  "training_text_sha256": "61d0bad82e4edca74510874ea202fba21bc29841a70eba81eb6c4d89b80df382",
+  "all_features": 160675,
+  "feature_counts_sha256": "e8a89a67014f84e123a91ad67cbd37c3fbd3921e3e38dd4a177dc58ca3db831d",
+  "cutoff_count": 4.0,
+  "features_above_cutoff": 16095,
+  "features_at_cutoff": 4635,
+  "slots_at_cutoff": 3905,
+  "vocabulary_overlap": 19493,
+  "differing_features": 1014,
+  "all_differences_at_cutoff": true,
+  "native_selection_matches_argsort": true,
+  "fits": {
+    "native": {
+      "maximum_score_error": 0.046762472872485666,
+      "threshold": 0.5553403734375596,
+      "recall": 0.81,
+      "fpr": 0.05,
+      "idf_maximum_error": null
+    },
+    "saved_vocabulary_diagnostic": {
+      "maximum_score_error": 2.4424906541753444e-15,
+      "threshold": 0.5571463167432391,
+      "recall": 0.804,
+      "fpr": 0.05,
+      "idf_maximum_error": 0.0
+    }
+  },
+  "historical_match": false,
+  "date_utc": "2026-10-06",
+  "environment": "fresh isolated numerical venv",
+  "dependency_check": "passed",
+  "numerical_threads": 1,
+  "require_historical_match_exit": 1
+}

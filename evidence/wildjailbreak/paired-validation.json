@@ -1,0 +1,66 @@
+{
+  "six_epoch_vs_baselines": {
+    "tfidf": {
+      "benign": {
+        "both_correct": 458,
+        "old_only_correct": 17,
+        "new_only_correct": 17,
+        "both_wrong": 8
+      },
+      "harmful": {
+        "both_correct": 397,
+        "old_only_correct": 5,
+        "new_only_correct": 86,
+        "both_wrong": 12
+      }
+    },
+    "deberta-one-epoch": {
+      "benign": {
+        "both_correct": 462,
+        "old_only_correct": 14,
+        "new_only_correct": 13,
+        "both_wrong": 11
+      },
+      "harmful": {
+        "both_correct": 436,
+        "old_only_correct": 2,
+        "new_only_correct": 47,
+        "both_wrong": 15
+      }
+    },
+    "deberta-two-epoch": {
+      "benign": {
+        "both_correct": 459,
+        "old_only_correct": 16,
+        "new_only_correct": 16,
+        "both_wrong": 9
+      },
+      "harmful": {
+        "both_correct": 458,
+        "old_only_correct": 3,
+        "new_only_correct": 25,
+        "both_wrong": 14
+      }
+    }
+  },
+  "two_vs_one_epoch": {
+    "old_threshold": 0.5956808924674988,
+    "new_threshold": 0.5178803205490112,
+    "counts": {
+      "harmful": {
+        "both_correct": 433,
+        "old_only_correct": 5,
+        "new_only_correct": 28,
+        "both_wrong": 34
+      },
+      "benign": {
+        "both_correct": 461,
+        "old_only_correct": 15,
+        "new_only_correct": 14,
+        "both_wrong": 10
+      }
+    },
+    "caveat": "Same validation set; thresholds selected on validation. Descriptive comparison, not independent generalization evidence."
+  },
+  "limit": "Same validation rows selected thresholds and checkpoints. Descriptive comparisons only."
+}

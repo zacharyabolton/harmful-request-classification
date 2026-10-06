@@ -1,0 +1,59 @@
+{
+  "date_utc": "2026-10-06",
+  "platform": "macOS ARM64",
+  "python": "3.11.13",
+  "environment": "fresh venv and exported project copy outside source workspace",
+  "setup": {
+    "status": "passed",
+    "seconds": 158.45445084571838,
+    "dependency_check": "passed",
+    "scipy_workaround": "same-version official macOS12 wheel"
+  },
+  "tests": {
+    "status": "passed",
+    "counts": {
+      "normal": 63,
+      "optimized": 63
+    },
+    "skips": 0
+  },
+  "synthetic_cpu_workflow": {
+    "status": "passed",
+    "commands": 64,
+    "seconds": 76.65392620800412,
+    "fixture_only": true
+  },
+  "numerical_regression": {
+    "status": "passed",
+    "rows": 4000,
+    "solver": "liblinear",
+    "finite_weights_scores_loss": true,
+    "warnings": []
+  },
+  "saved_inference": {
+    "wj-tfidf": {
+      "rows": 1000,
+      "maximum_score_error": 2.220446049250313e-16,
+      "changed_decisions": 0,
+      "seconds": 0.1180364589963574
+    },
+    "wj-deberta-6ep": {
+      "rows": 1000,
+      "maximum_score_error": 4.410743713378906e-06,
+      "changed_decisions": 0,
+      "seconds": 57.92946454200137
+    }
+  },
+  "offline_example_predictions": {
+    "wj-tfidf": 2,
+    "wj-deberta-6ep": 2
+  },
+  "model_library_network_access": "disabled for saved inference",
+  "historical_data_source": "fresh pinned acquisition; original split hashes checked",
+  "cost_usd": 0,
+  "changed_script_regressions": {
+    "normal": 4,
+    "optimized": 4,
+    "status": "passed"
+  }
+}

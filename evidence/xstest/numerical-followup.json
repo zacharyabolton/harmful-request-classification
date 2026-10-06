@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "fixture_only": true,
+  "rows": 4000,
+  "features": 20000,
+  "solver": "liblinear",
+  "iterations": [
+    4
+  ],
+  "warnings": [],
+  "finite_weights_scores_loss": true,
+  "loss": 0.18410792954285005,
+  "seconds": 0.9164066660159733,
+  "remedy_number": 1,
+  "reason": "Synthetic fit warnings motivated liblinear for numerical safety, not measured classification quality.",
+  "historical_cause": "not established"
+}

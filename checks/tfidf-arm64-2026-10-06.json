@@ -1,0 +1,49 @@
+{
+  "python": "3.11.13",
+  "platform": "macOS-27.0-arm64-arm-64bit",
+  "disabled_cpu_features": "",
+  "enabled_cpu_features": [
+    "ASIMD",
+    "ASIMDDP",
+    "ASIMDHP",
+    "FPHP",
+    "NEON",
+    "NEON_FP16",
+    "NEON_VFPV4"
+  ],
+  "numpy": "2.2.6",
+  "scipy": "1.15.3",
+  "sklearn": "1.7.2",
+  "train_rows": 4000,
+  "validation_rows": 1000,
+  "training_text_sha256": "61d0bad82e4edca74510874ea202fba21bc29841a70eba81eb6c4d89b80df382",
+  "all_features": 160675,
+  "feature_counts_sha256": "e8a89a67014f84e123a91ad67cbd37c3fbd3921e3e38dd4a177dc58ca3db831d",
+  "cutoff_count": 4.0,
+  "features_above_cutoff": 16095,
+  "features_at_cutoff": 4635,
+  "slots_at_cutoff": 3905,
+  "vocabulary_overlap": 19312,
+  "differing_features": 1376,
+  "all_differences_at_cutoff": true,
+  "native_selection_matches_argsort": true,
+  "fits": {
+    "native": {
+      "maximum_score_error": 0.04505654573784518,
+      "threshold": 0.5598224093431377,
+      "recall": 0.798,
+      "fpr": 0.05,
+      "idf_maximum_error": null
+    },
+    "saved_vocabulary_diagnostic": {
+      "maximum_score_error": 1.887379141862766e-15,
+      "threshold": 0.5571463167432392,
+      "recall": 0.804,
+      "fpr": 0.05,
+      "idf_maximum_error": 0.0
+    }
+  },
+  "historical_match": false,
+  "date_utc": "2026-10-06",
+  "require_historical_match_exit": 1
+}

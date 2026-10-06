@@ -1,0 +1,224 @@
+[
+  {
+    "epoch": 1,
+    "validation": {
+      "threshold": 0.5976665616035461,
+      "n": 1000,
+      "positives": 500,
+      "negatives": 500,
+      "confusion": {
+        "tn": 476,
+        "fp": 24,
+        "fn": 62,
+        "tp": 438
+      },
+      "precision": 0.948051948051948,
+      "recall": 0.876,
+      "f1": 0.9106029106029107,
+      "average_precision": 0.9770671414622629,
+      "fpr": 0.048,
+      "fpr_wilson_95": [
+        0.03246520694135317,
+        0.07042719683589006
+      ],
+      "recall_wilson_95": [
+        0.8442125871122163,
+        0.9020539088606966
+      ],
+      "one_class_slice": false,
+      "empty_slice": false,
+      "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+    },
+    "checkpoint_improved": true,
+    "patience_reset": true,
+    "bad_epochs": 0,
+    "best_epoch": 1,
+    "stop": false,
+    "validation_and_checkpoint_seconds": 9.639179223999918
+  },
+  {
+    "epoch": 2,
+    "validation": {
+      "threshold": 0.5985193252563477,
+      "n": 1000,
+      "positives": 500,
+      "negatives": 500,
+      "confusion": {
+        "tn": 478,
+        "fp": 22,
+        "fn": 41,
+        "tp": 459
+      },
+      "precision": 0.9542619542619543,
+      "recall": 0.918,
+      "f1": 0.9357798165137615,
+      "average_precision": 0.986468018022782,
+      "fpr": 0.044,
+      "fpr_wilson_95": [
+        0.02923395562860718,
+        0.06571944287232845
+      ],
+      "recall_wilson_95": [
+        0.8906451408426114,
+        0.9389809105315311
+      ],
+      "one_class_slice": false,
+      "empty_slice": false,
+      "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+    },
+    "checkpoint_improved": true,
+    "patience_reset": true,
+    "bad_epochs": 0,
+    "best_epoch": 2,
+    "stop": false,
+    "validation_and_checkpoint_seconds": 9.692089406999912
+  },
+  {
+    "epoch": 3,
+    "validation": {
+      "threshold": 0.05065803602337837,
+      "n": 1000,
+      "positives": 500,
+      "negatives": 500,
+      "confusion": {
+        "tn": 477,
+        "fp": 23,
+        "fn": 30,
+        "tp": 470
+      },
+      "precision": 0.9533468559837728,
+      "recall": 0.94,
+      "f1": 0.94662638469285,
+      "average_precision": 0.9897043313350131,
+      "fpr": 0.046,
+      "fpr_wilson_95": [
+        0.030845108370816204,
+        0.06807779276827323
+      ],
+      "recall_wilson_95": [
+        0.9156389368747802,
+        0.9576516435190539
+      ],
+      "one_class_slice": false,
+      "empty_slice": false,
+      "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+    },
+    "checkpoint_improved": true,
+    "patience_reset": true,
+    "bad_epochs": 0,
+    "best_epoch": 3,
+    "stop": false,
+    "validation_and_checkpoint_seconds": 9.88944160699998
+  },
+  {
+    "epoch": 4,
+    "validation": {
+      "threshold": 0.4502292573451996,
+      "n": 1000,
+      "positives": 500,
+      "negatives": 500,
+      "confusion": {
+        "tn": 478,
+        "fp": 22,
+        "fn": 19,
+        "tp": 481
+      },
+      "precision": 0.9562624254473161,
+      "recall": 0.962,
+      "f1": 0.959122632103689,
+      "average_precision": 0.9915084709270944,
+      "fpr": 0.044,
+      "fpr_wilson_95": [
+        0.02923395562860718,
+        0.06571944287232845
+      ],
+      "recall_wilson_95": [
+        0.9414152274693561,
+        0.9755398819441696
+      ],
+      "one_class_slice": false,
+      "empty_slice": false,
+      "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+    },
+    "checkpoint_improved": true,
+    "patience_reset": true,
+    "bad_epochs": 0,
+    "best_epoch": 4,
+    "stop": false,
+    "validation_and_checkpoint_seconds": 12.371550863000039
+  },
+  {
+    "epoch": 5,
+    "validation": {
+      "threshold": 0.9647810459136963,
+      "n": 1000,
+      "positives": 500,
+      "negatives": 500,
+      "confusion": {
+        "tn": 476,
+        "fp": 24,
+        "fn": 36,
+        "tp": 464
+      },
+      "precision": 0.9508196721311475,
+      "recall": 0.928,
+      "f1": 0.9392712550607287,
+      "average_precision": 0.9881744663323601,
+      "fpr": 0.048,
+      "fpr_wilson_95": [
+        0.03246520694135317,
+        0.07042719683589006
+      ],
+      "recall_wilson_95": [
+        0.9019315959830375,
+        0.9475419685818739
+      ],
+      "one_class_slice": false,
+      "empty_slice": false,
+      "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+    },
+    "checkpoint_improved": false,
+    "patience_reset": false,
+    "bad_epochs": 1,
+    "best_epoch": 4,
+    "stop": false,
+    "validation_and_checkpoint_seconds": 8.988020494000011
+  },
+  {
+    "epoch": 6,
+    "validation": {
+      "threshold": 0.01567990332841873,
+      "n": 1000,
+      "positives": 500,
+      "negatives": 500,
+      "confusion": {
+        "tn": 475,
+        "fp": 25,
+        "fn": 17,
+        "tp": 483
+      },
+      "precision": 0.9507874015748031,
+      "recall": 0.966,
+      "f1": 0.9583333333333334,
+      "average_precision": 0.9935506425623543,
+      "fpr": 0.05,
+      "fpr_wilson_95": [
+        0.034093745243849435,
+        0.0727681611715476
+      ],
+      "recall_wilson_95": [
+        0.9462286344983655,
+        0.9786654801914678
+      ],
+      "one_class_slice": false,
+      "empty_slice": false,
+      "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+    },
+    "checkpoint_improved": true,
+    "patience_reset": true,
+    "bad_epochs": 0,
+    "best_epoch": 6,
+    "stop": false,
+    "validation_and_checkpoint_seconds": 10.153082452000035
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "threshold": 0.5956808924674988,
+  "overall": {
+    "n": 1000,
+    "positives": 500,
+    "negatives": 500,
+    "confusion": {
+      "tn": 482,
+      "fp": 18,
+      "fn": 64,
+      "tp": 436
+    },
+    "precision": 0.960352422907489,
+    "recall": 0.872,
+    "f1": 0.9140461215932913,
+    "average_precision": 0.9804842125513074,
+    "fpr": 0.036,
+    "fpr_wilson_95": [
+      0.02289106098029272,
+      0.056184326968027755
+    ],
+    "recall_wilson_95": [
+      0.8398543146918417,
+      0.8984731760047634
+    ],
+    "one_class_slice": false,
+    "empty_slice": false,
+    "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+  },
+  "AP_definition": "stepwise average precision; not trapezoidal PR area",
+  "slices": {
+    "source_type": {
+      "adversarial_benign": {
+        "n": 303,
+        "positives": 0,
+        "negatives": 303,
+        "confusion": {
+          "tn": 288,
+          "fp": 15,
+          "fn": 0,
+          "tp": 0
+        },
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "average_precision": null,
+        "fpr": 0.04950495049504951,
+        "fpr_wilson_95": [
+          0.03022705143290239,
+          0.08006266935893404
+        ],
+        "recall_wilson_95": null,
+        "one_class_slice": true,
+        "empty_slice": false,
+        "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+      },
+      "adversarial_harmful": {
+        "n": 309,
+        "positives": 309,
+        "negatives": 0,
+        "confusion": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 55,
+          "tp": 254
+        },
+        "precision": 1.0,
+        "recall": 0.8220064724919094,
+        "f1": 0.9023090586145648,
+        "average_precision": null,
+        "fpr": null,
+        "fpr_wilson_95": null,
+        "recall_wilson_95": [
+          0.7754821344967662,
+          0.8606228138376468
+        ],
+        "one_class_slice": true,
+        "empty_slice": false,
+        "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+      },
+      "vanilla_benign": {
+        "n": 197,
+        "positives": 0,
+        "negatives": 197,
+        "confusion": {
+          "tn": 194,
+          "fp": 3,
+          "fn": 0,
+          "tp": 0
+        },
+        "precision": 0.0,
+        "recall": null,
+        "f1": 0.0,
+        "average_precision": null,
+        "fpr": 0.015228426395939087,
+        "fpr_wilson_95": [
+          0.005192319872040753,
+          0.04380881205799724
+        ],
+        "recall_wilson_95": null,
+        "one_class_slice": true,
+        "empty_slice": false,
+        "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+      },
+      "vanilla_harmful": {
+        "n": 191,
+        "positives": 191,
+        "negatives": 0,
+        "confusion": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 9,
+          "tp": 182
+        },
+        "precision": 1.0,
+        "recall": 0.9528795811518325,
+        "f1": 0.9758713136729222,
+        "average_precision": null,
+        "fpr": null,
+        "fpr_wilson_95": null,
+        "recall_wilson_95": [
+          0.9128867711608313,
+          0.9750146079763775
+        ],
+        "one_class_slice": true,
+        "empty_slice": false,
+        "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+      }
+    }
+  }
+}

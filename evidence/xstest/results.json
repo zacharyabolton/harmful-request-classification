@@ -1,0 +1,290 @@
+{
+  "heldout": {
+    "overall": {
+      "n": 75,
+      "positives": 25,
+      "negatives": 50,
+      "precision": 0.32857142857142857,
+      "recall": 0.92,
+      "f1": 0.4842105263157895,
+      "average_precision": 0.35775112186713837,
+      "confusion": {
+        "tn": 3,
+        "fp": 47,
+        "fn": 2,
+        "tp": 23
+      },
+      "fpr": 0.94,
+      "fpr_wilson_95": [
+        0.8378290831116182,
+        0.979385029651026
+      ],
+      "recall_wilson_95": [
+        0.7503389104960468,
+        0.9777795987151524
+      ],
+      "interval_caveat": "binomial row-level interval; correlated group observations violate independence",
+      "one_class_slice": false
+    },
+    "threshold": 0.3186046031186859,
+    "average_precision_definition": "sum over recall increases of precision at each score threshold, sklearn average_precision_score; not trapezoidal PR area",
+    "by_category": {
+      "contrast_discr": {
+        "n": 25,
+        "positives": 25,
+        "negatives": 0,
+        "precision": 1.0,
+        "recall": 0.92,
+        "f1": 0.9583333333333334,
+        "average_precision": null,
+        "confusion": {
+          "tn": 0,
+          "fp": 0,
+          "fn": 2,
+          "tp": 23
+        },
+        "fpr": null,
+        "fpr_wilson_95": null,
+        "recall_wilson_95": [
+          0.7503389104960468,
+          0.9777795987151524
+        ],
+        "interval_caveat": "binomial row-level interval; correlated group observations violate independence",
+        "one_class_slice": true
+      },
+      "nons_group_real_discr": {
+        "n": 25,
+        "positives": 0,
+        "negatives": 25,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "average_precision": null,
+        "confusion": {
+          "tn": 2,
+          "fp": 23,
+          "fn": 0,
+          "tp": 0
+        },
+        "fpr": 0.92,
+        "fpr_wilson_95": [
+          0.7503389104960468,
+          0.9777795987151524
+        ],
+        "recall_wilson_95": null,
+        "interval_caveat": "binomial row-level interval; correlated group observations violate independence",
+        "one_class_slice": true
+      },
+      "real_group_nons_discr": {
+        "n": 25,
+        "positives": 0,
+        "negatives": 25,
+        "precision": 0.0,
+        "recall": null,
+        "f1": null,
+        "average_precision": null,
+        "confusion": {
+          "tn": 1,
+          "fp": 24,
+          "fn": 0,
+          "tp": 0
+        },
+        "fpr": 0.96,
+        "fpr_wilson_95": [
+          0.8045593626380625,
+          0.9929037664980127
+        ],
+        "recall_wilson_95": null,
+        "interval_caveat": "binomial row-level interval; correlated group observations violate independence",
+        "one_class_slice": true
+      }
+    },
+    "by_source": {
+      "paul-rottger/xstest": {
+        "n": 75,
+        "positives": 25,
+        "negatives": 50,
+        "precision": 0.32857142857142857,
+        "recall": 0.92,
+        "f1": 0.4842105263157895,
+        "average_precision": 0.35775112186713837,
+        "confusion": {
+          "tn": 3,
+          "fp": 47,
+          "fn": 2,
+          "tp": 23
+        },
+        "fpr": 0.94,
+        "fpr_wilson_95": [
+          0.8378290831116182,
+          0.979385029651026
+        ],
+        "recall_wilson_95": [
+          0.7503389104960468,
+          0.9777795987151524
+        ],
+        "interval_caveat": "binomial row-level interval; correlated group observations violate independence",
+        "one_class_slice": false
+      }
+    }
+  },
+  "validation": {
+    "threshold": 0.3186046031186859,
+    "n": 100,
+    "positives": 50,
+    "negatives": 50,
+    "precision": 0.5764705882352941,
+    "recall": 0.98,
+    "f1": 0.725925925925926,
+    "average_precision": 0.6448432064193237,
+    "confusion": {
+      "tn": 14,
+      "fp": 36,
+      "fn": 1,
+      "tp": 49
+    },
+    "fpr": 0.72,
+    "fpr_wilson_95": [
+      0.5833487630404344,
+      0.8252582933408878
+    ],
+    "recall_wilson_95": [
+      0.8950455641036219,
+      0.9964607407283539
+    ],
+    "interval_caveat": "binomial row-level interval; correlated group observations violate independence",
+    "one_class_slice": false
+  },
+  "split_summary": {
+    "train": {
+      "n": 275,
+      "labels": {
+        "0": 150,
+        "1": 125
+      },
+      "categories": {
+        "homonyms": 25,
+        "contrast_homonyms": 25,
+        "safe_targets": 25,
+        "contrast_safe_targets": 25,
+        "safe_contexts": 25,
+        "contrast_safe_contexts": 25,
+        "definitions": 25,
+        "contrast_definitions": 25,
+        "privacy_public": 25,
+        "privacy_fictional": 25,
+        "contrast_privacy": 25
+      },
+      "sources": {
+        "paul-rottger/xstest": 275
+      },
+      "groups": 4,
+      "length_chars_min_median_p95_max": [
+        12.0,
+        39.0,
+        62.0,
+        76.0
+      ],
+      "missing_parent_ids": 275,
+      "missing_policy": 275,
+      "truncated": 0
+    },
+    "validation": {
+      "n": 100,
+      "labels": {
+        "0": 50,
+        "1": 50
+      },
+      "categories": {
+        "figurative_language": 25,
+        "contrast_figurative_language": 25,
+        "historical_events": 25,
+        "contrast_historical_events": 25
+      },
+      "sources": {
+        "paul-rottger/xstest": 100
+      },
+      "groups": 2,
+      "length_chars_min_median_p95_max": [
+        22.0,
+        47.0,
+        73.1,
+        83.0
+      ],
+      "missing_parent_ids": 100,
+      "missing_policy": 100,
+      "truncated": 0
+    },
+    "test": {
+      "n": 75,
+      "labels": {
+        "0": 50,
+        "1": 25
+      },
+      "categories": {
+        "nons_group_real_discr": 25,
+        "real_group_nons_discr": 25,
+        "contrast_discr": 25
+      },
+      "sources": {
+        "paul-rottger/xstest": 75
+      },
+      "groups": 1,
+      "length_chars_min_median_p95_max": [
+        32.0,
+        52.0,
+        81.0,
+        99.0
+      ],
+      "missing_parent_ids": 75,
+      "missing_policy": 75,
+      "truncated": 0
+    }
+  },
+  "audit_summary": {
+    "method": "normalized exact + all-pairs token-set Jaccard; no learned embeddings",
+    "pairs_checked": 101025,
+    "exact_pairs": 0,
+    "near_pairs": 7,
+    "cross_split_pairs": 0,
+    "cross_split_groups": 0,
+    "residual_risk": "category families + lexical components are proxies, not verified seed genealogy; semantic variants below threshold can remain"
+  },
+  "latency": {
+    "device": "cpu",
+    "platform": "macOS-26.5-arm64-arm-64bit",
+    "single_batch_size": 1,
+    "single_samples": 75,
+    "single_warmup": 5,
+    "single_ms_p50_p95_max": [
+      0.13816700084134936,
+      0.1761080871801823,
+      0.20495799253694713
+    ],
+    "batch_size": 75,
+    "batch_warmup": 3,
+    "batch_repetitions": 20,
+    "batch_latency_ms": 0.5102937502670102,
+    "batch_throughput_rows_per_second": 146974.16921284338,
+    "input_chars_min_median_p95_max": [
+      32.0,
+      52.0,
+      81.0,
+      99.0
+    ],
+    "includes": "raw rendering + TF-IDF + predict_proba",
+    "excludes": "disk I/O, model load, network, request queues"
+  },
+  "verification": {
+    "fresh_process_prediction_exact": true,
+    "rows": 75,
+    "fresh_process_prediction_wall_seconds": 0.8270393330021761,
+    "warm_baseline_rerun_wall_seconds": 1.0112007499847095,
+    "warm_rerun_includes": "Python startup, imports, integrity hashes, local data load, train, validation threshold selection and matching frozen test predictions",
+    "warm_rerun_excludes": "downloads, dependency installation, manual review, packaging",
+    "under_20_minutes": true
+  },
+  "label_validation": "agent-reviewed training sample; human validation pending",
+  "api": "mock-tested only; no live requests",
+  "improvements": "none"
+}

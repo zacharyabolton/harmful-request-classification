@@ -1,0 +1,490 @@
+{
+  "date_utc": "2026-10-06T02:05:22.492138+00:00",
+  "status": "completed",
+  "settings": {
+    "schema_version": 1,
+    "seed": 42,
+    "max_chars": 12000,
+    "max_rows": 6000,
+    "max_features": 20000,
+    "C": 1.0,
+    "max_iter": 1000,
+    "solver": "liblinear",
+    "objective": "recall_at_fpr",
+    "max_fpr": 0.05,
+    "device": "cpu",
+    "encoder_device": "cuda",
+    "encoder_revision": "4b419818330868dff6a60ad3e6b1c730f8b8c0c6",
+    "fixture_only": false,
+    "model_options": {
+      "epochs": 6,
+      "batch_size": 8,
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "max_length": "auto",
+      "max_steps": null,
+      "max_stage_seconds": 1800,
+      "pilot_steps": 20,
+      "early_stopping": {
+        "patience": 2,
+        "min_delta": 0
+      }
+    }
+  },
+  "runtime": {
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:22) [GCC 13.3.0]",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.39",
+    "dependencies": {
+      "huggingface-hub": "0.34.4",
+      "joblib": "1.5.2",
+      "numpy": "2.2.6",
+      "protobuf": "6.32.1",
+      "safetensors": "0.6.2",
+      "scikit-learn": "1.7.2",
+      "scipy": "1.15.3",
+      "sentencepiece": "0.2.1",
+      "threadpoolctl": "3.6.0",
+      "tokenizers": "0.22.2",
+      "torch": "2.11.0+cu130",
+      "transformers": "4.56.2"
+    },
+    "device": "cuda",
+    "gpu": "Tesla T4",
+    "source_hashes": {
+      "checkpoints.py": "cabc23b431e43efb15e57e933b2bf8b18886faf56b44f0125abfba7f154b83f4",
+      "collection.py": "28e1cf6f76560a78248705add9764f55051187ddf9a364a4f95d047acac8e6a5",
+      "data.py": "8b52fec4bc91f5831aa3a8f5c0c6568252e10d10b81c9c2c1e668f1dc9d53738",
+      "early_stopping.py": "631534b25c3817d5c32bd472e107bdcc642a89b2ecce1e0770fa7172ce198102",
+      "evaluation.py": "d72f08d254570be9309b2ecc86ff58bfa95d4378623c0b5f1f321bfce22ae7e5",
+      "experiments.py": "993e09fd06e839aa049afd1b23a82715f117feb6bd38943d3cd36f9a4c9d78d1",
+      "measurement.py": "91f897d4603d87fbe093158be4c017f101a30b0fcfaf123b35dc7fd50c0b4e4e",
+      "models.py": "b7a23a21c2694868832f625745066f752298a743d08cc961c93e29ec479bb616",
+      "planning.py": "8eb2f9626cd20e9865af4c09378bd9004af10c7d75c016da05280a3f9b0556c5",
+      "preparation.py": "4073b536c5189cc574e9f3f1fe872f8f8f9628e9781a449e9bcad70782fd8832",
+      "reporting.py": "2de1c9a0d21c9f489ab604ad3e32ad778fbc0cbbf28e5ca27e8a96ca49ad4fd3",
+      "run.py": "2e51bd47883466ee4b0cf34110efd5a3bfcbdd96743d85137a138fda597de70c",
+      "runtime.py": "2cff9e49eaec73634e872d7bc6f892a39a95d87cd1c1b3a8fec3f4c436eed45f",
+      "session.py": "be5dc2b915b8b12c3ebe98b9fad593113a0277a5bc756834f0d5aeee09356a5f",
+      "settings.py": "eafe6eb055801417a86cb3782cb7556b3e51184779ddd8b6e248f2e58a26eb1c",
+      "state.py": "b8a3c2c20ba7bdf894020a4c5d7817e416a51a32d60decda9ba2a12c674cf46e",
+      "task.py": "65be3e79858bc4af654842669812d2b5651454e43b1b1c037b0319b849a76eaa",
+      "wildjailbreak.py": "8c175689f6ffb1dd5621064cc24345d9bf689c2ee76c333a1e8c3e45f49325a0",
+      "workflow.py": "f90e73e7841da42bfa893633cb83fb3ebbd2bc6a254dd3cb442b4376de14068a"
+    }
+  },
+  "split_sha256": {
+    "train": "fba6fcf1c6d6d238a2f9df6a414475eb40ab4b422e0b1319be9352e9f2af081b",
+    "validation": "638931f1fe2eea84db678fc06f357e59a9b298d94338c43ad93d4a646525a635"
+  },
+  "validation": {
+    "threshold": 0.10215101391077042,
+    "n": 1000,
+    "positives": 500,
+    "negatives": 500,
+    "confusion": {
+      "tn": 475,
+      "fp": 25,
+      "fn": 20,
+      "tp": 480
+    },
+    "precision": 0.9504950495049505,
+    "recall": 0.96,
+    "f1": 0.9552238805970149,
+    "average_precision": 0.9919152477191445,
+    "fpr": 0.05,
+    "fpr_wilson_95": [
+      0.034093745243849435,
+      0.0727681611715476
+    ],
+    "recall_wilson_95": [
+      0.9390264041651492,
+      0.9739592026102227
+    ],
+    "one_class_slice": false,
+    "empty_slice": false,
+    "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+  },
+  "diagnostics": {
+    "steps": 3000,
+    "planned_steps": 3000,
+    "completed_epochs": 6,
+    "examples_seen": 24000,
+    "settings": {
+      "epochs": 6,
+      "batch_size": 8,
+      "learning_rate": 2e-05,
+      "weight_decay": 0.01,
+      "max_length": "auto",
+      "max_steps": null,
+      "max_stage_seconds": 1800,
+      "pilot_steps": 20,
+      "early_stopping": {
+        "patience": 2,
+        "min_delta": 0
+      }
+    },
+    "finite_gradients": true,
+    "parameter_updated": true,
+    "max_length": 512,
+    "length_audit": {
+      "n": 5000,
+      "over_256": 377,
+      "over_512": 10
+    },
+    "seconds": 762.5583770879999,
+    "device": "cuda",
+    "batch_size": 8,
+    "early_stopping": {
+      "monitor": "validation recall at empirical FPR <=5.0%",
+      "patience": 2,
+      "min_delta": 0,
+      "best_epoch": 5,
+      "best_validation": {
+        "threshold": 0.10215101391077042,
+        "n": 1000,
+        "positives": 500,
+        "negatives": 500,
+        "confusion": {
+          "tn": 475,
+          "fp": 25,
+          "fn": 20,
+          "tp": 480
+        },
+        "precision": 0.9504950495049505,
+        "recall": 0.96,
+        "f1": 0.9552238805970149,
+        "average_precision": 0.9919152477191445,
+        "fpr": 0.05,
+        "fpr_wilson_95": [
+          0.034093745243849435,
+          0.0727681611715476
+        ],
+        "recall_wilson_95": [
+          0.9390264041651492,
+          0.9739592026102227
+        ],
+        "one_class_slice": false,
+        "empty_slice": false,
+        "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+      },
+      "stop_reason": "epoch_limit",
+      "history": [
+        {
+          "epoch": 1,
+          "validation": {
+            "threshold": 0.5971837043762207,
+            "n": 1000,
+            "positives": 500,
+            "negatives": 500,
+            "confusion": {
+              "tn": 476,
+              "fp": 24,
+              "fn": 62,
+              "tp": 438
+            },
+            "precision": 0.948051948051948,
+            "recall": 0.876,
+            "f1": 0.9106029106029107,
+            "average_precision": 0.9770938931145412,
+            "fpr": 0.048,
+            "fpr_wilson_95": [
+              0.03246520694135317,
+              0.07042719683589006
+            ],
+            "recall_wilson_95": [
+              0.8442125871122163,
+              0.9020539088606966
+            ],
+            "one_class_slice": false,
+            "empty_slice": false,
+            "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+          },
+          "checkpoint_improved": true,
+          "patience_reset": true,
+          "bad_epochs": 0,
+          "best_epoch": 1,
+          "stop": false,
+          "validation_and_checkpoint_seconds": 9.851848778999965
+        },
+        {
+          "epoch": 2,
+          "validation": {
+            "threshold": 0.5238213539123535,
+            "n": 1000,
+            "positives": 500,
+            "negatives": 500,
+            "confusion": {
+              "tn": 475,
+              "fp": 25,
+              "fn": 39,
+              "tp": 461
+            },
+            "precision": 0.948559670781893,
+            "recall": 0.922,
+            "f1": 0.9350912778904665,
+            "average_precision": 0.9864938290831108,
+            "fpr": 0.05,
+            "fpr_wilson_95": [
+              0.034093745243849435,
+              0.0727681611715476
+            ],
+            "recall_wilson_95": [
+              0.8951464501266115,
+              0.9424186065238385
+            ],
+            "one_class_slice": false,
+            "empty_slice": false,
+            "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+          },
+          "checkpoint_improved": true,
+          "patience_reset": true,
+          "bad_epochs": 0,
+          "best_epoch": 2,
+          "stop": false,
+          "validation_and_checkpoint_seconds": 9.885202794000065
+        },
+        {
+          "epoch": 3,
+          "validation": {
+            "threshold": 0.05249457806348801,
+            "n": 1000,
+            "positives": 500,
+            "negatives": 500,
+            "confusion": {
+              "tn": 475,
+              "fp": 25,
+              "fn": 29,
+              "tp": 471
+            },
+            "precision": 0.9495967741935484,
+            "recall": 0.942,
+            "f1": 0.9457831325301205,
+            "average_precision": 0.9896146096978748,
+            "fpr": 0.05,
+            "fpr_wilson_95": [
+              0.034093745243849435,
+              0.0727681611715476
+            ],
+            "recall_wilson_95": [
+              0.917943812143745,
+              0.9593162708882429
+            ],
+            "one_class_slice": false,
+            "empty_slice": false,
+            "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+          },
+          "checkpoint_improved": true,
+          "patience_reset": true,
+          "bad_epochs": 0,
+          "best_epoch": 3,
+          "stop": false,
+          "validation_and_checkpoint_seconds": 15.689042126000004
+        },
+        {
+          "epoch": 4,
+          "validation": {
+            "threshold": 0.5085054039955139,
+            "n": 1000,
+            "positives": 500,
+            "negatives": 500,
+            "confusion": {
+              "tn": 477,
+              "fp": 23,
+              "fn": 27,
+              "tp": 473
+            },
+            "precision": 0.9536290322580645,
+            "recall": 0.946,
+            "f1": 0.9497991967871486,
+            "average_precision": 0.9909096034606713,
+            "fpr": 0.046,
+            "fpr_wilson_95": [
+              0.030845108370816204,
+              0.06807779276827323
+            ],
+            "recall_wilson_95": [
+              0.9225734384893529,
+              0.9626256498189425
+            ],
+            "one_class_slice": false,
+            "empty_slice": false,
+            "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+          },
+          "checkpoint_improved": true,
+          "patience_reset": true,
+          "bad_epochs": 0,
+          "best_epoch": 4,
+          "stop": false,
+          "validation_and_checkpoint_seconds": 9.712084722999975
+        },
+        {
+          "epoch": 5,
+          "validation": {
+            "threshold": 0.10215101391077042,
+            "n": 1000,
+            "positives": 500,
+            "negatives": 500,
+            "confusion": {
+              "tn": 475,
+              "fp": 25,
+              "fn": 20,
+              "tp": 480
+            },
+            "precision": 0.9504950495049505,
+            "recall": 0.96,
+            "f1": 0.9552238805970149,
+            "average_precision": 0.9919152477191445,
+            "fpr": 0.05,
+            "fpr_wilson_95": [
+              0.034093745243849435,
+              0.0727681611715476
+            ],
+            "recall_wilson_95": [
+              0.9390264041651492,
+              0.9739592026102227
+            ],
+            "one_class_slice": false,
+            "empty_slice": false,
+            "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+          },
+          "checkpoint_improved": true,
+          "patience_reset": true,
+          "bad_epochs": 0,
+          "best_epoch": 5,
+          "stop": false,
+          "validation_and_checkpoint_seconds": 9.95284499000013
+        },
+        {
+          "epoch": 6,
+          "validation": {
+            "threshold": 0.35401639342308044,
+            "n": 1000,
+            "positives": 500,
+            "negatives": 500,
+            "confusion": {
+              "tn": 475,
+              "fp": 25,
+              "fn": 24,
+              "tp": 476
+            },
+            "precision": 0.9500998003992016,
+            "recall": 0.952,
+            "f1": 0.951048951048951,
+            "average_precision": 0.9927162384224524,
+            "fpr": 0.05,
+            "fpr_wilson_95": [
+              0.034093745243849435,
+              0.0727681611715476
+            ],
+            "recall_wilson_95": [
+              0.92957280316411,
+              0.9675347930586469
+            ],
+            "one_class_slice": false,
+            "empty_slice": false,
+            "interval_caveat": "Row Wilson ignores group correlation; validation also ignores threshold selection. Artificial prevalence affects precision/AP."
+          },
+          "checkpoint_improved": false,
+          "patience_reset": false,
+          "bad_epochs": 1,
+          "best_epoch": 5,
+          "stop": false,
+          "validation_and_checkpoint_seconds": 8.955749636000064
+        }
+      ]
+    },
+    "loss_summary": {
+      "steps": 3000,
+      "first": 0.7025818824768066,
+      "last": 0.0015661466168239713
+    }
+  },
+  "historical_comparison": {
+    "maximum_score_difference": 0.98296058177948,
+    "changed_decisions": 41,
+    "threshold_difference": 0.08647111058235168,
+    "epochs": [
+      {
+        "epoch": 1,
+        "recall_difference": 0.0,
+        "fpr_difference": 0.0,
+        "threshold_difference": -0.00048285722732543945,
+        "historical_best_epoch": 1,
+        "reproduced_best_epoch": 1
+      },
+      {
+        "epoch": 2,
+        "recall_difference": 0.0040000000000000036,
+        "fpr_difference": 0.006000000000000005,
+        "threshold_difference": -0.07469797134399414,
+        "historical_best_epoch": 2,
+        "reproduced_best_epoch": 2
+      },
+      {
+        "epoch": 3,
+        "recall_difference": 0.0020000000000000018,
+        "fpr_difference": 0.0040000000000000036,
+        "threshold_difference": 0.0018365420401096344,
+        "historical_best_epoch": 3,
+        "reproduced_best_epoch": 3
+      },
+      {
+        "epoch": 4,
+        "recall_difference": -0.016000000000000014,
+        "fpr_difference": 0.0020000000000000018,
+        "threshold_difference": 0.05827614665031433,
+        "historical_best_epoch": 4,
+        "reproduced_best_epoch": 4
+      },
+      {
+        "epoch": 5,
+        "recall_difference": 0.03199999999999992,
+        "fpr_difference": 0.0020000000000000018,
+        "threshold_difference": -0.8626300320029259,
+        "historical_best_epoch": 4,
+        "reproduced_best_epoch": 5
+      },
+      {
+        "epoch": 6,
+        "recall_difference": -0.014000000000000012,
+        "fpr_difference": 0.0,
+        "threshold_difference": 0.3383364900946617,
+        "historical_best_epoch": 6,
+        "reproduced_best_epoch": 5
+      }
+    ],
+    "historical_best_epoch": 6,
+    "reproduced_best_epoch": 5
+  },
+  "saved_reload": {
+    "rows": 1000,
+    "maximum_score_difference": 0.0,
+    "changed_decisions": 0
+  },
+  "test_evaluated": false,
+  "interpretation": "Fixed reproduction on previously used validation; no independent test evidence.",
+  "validation_predictions_sha256": "b693ff15e36f1f8e57e14397ddda821576026a72d247214ff18c28b8ce808a33",
+  "runtime_probe": {
+    "cuda": "13.0",
+    "cudnn": 92700,
+    "gpu": "Tesla T4",
+    "gpu_capability": [
+      7,
+      5
+    ],
+    "deterministic_algorithms": false,
+    "cudnn_deterministic": false,
+    "cudnn_benchmark": false,
+    "cuda_matmul_allow_tf32": false,
+    "cudnn_allow_tf32": true,
+    "probe": "Fresh process with same imports; training source does not modify these flags."
+  },
+  "executed_reproduction_script_sha256": "099d4df4912276b2a9bdc9786260b6a9076233766eefa4614b707aa634141e8d",
+  "colab_base_conflicts": [
+    "Preinstalled Google cloud packages require protobuf>=6.33.5; pinned6.32.1.",
+    "Preinstalled Gradio requires huggingface-hub>=1.16.0; Diffusers requires>=1.23.0; pinned0.34.4.",
+    "Preinstalled Diffusers requires safetensors>=0.8.0; pinned0.6.2."
+  ],
+  "environment_scope": "Recorded core dependencies match. Other Colab packages were not isolated or fully compared; no complete environment-match claim.",
+  "runner_scope": "Training call unchanged. Prediction export and extra report fields were added to the shipped runner after training started."
+}

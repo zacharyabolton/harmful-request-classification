@@ -1,0 +1,464 @@
+{
+  "schema_version": 1,
+  "record_type": "historical_evidence",
+  "provenance": "Source hashes identify retained local originals; omitted originals are not public download links. Export hashes cover curated files.",
+  "artifacts": [
+    {
+      "path": "wildjailbreak/data.json",
+      "sha256": "ad56c127284d45e40c8334513bdd42a54ba22a9cceaf35480b6e0113cf691a58",
+      "source_records": [
+        {
+          "record": "wildjailbreak/data.json:1",
+          "sha256": "8abd8e1ace683f0df3900e207af7d70e916793d9f252b8a31dea7304317d6012"
+        },
+        {
+          "record": "wildjailbreak/data.json:2",
+          "sha256": "6ad24a78b2f38cb1d7ad35b36d17ea2dff376566a08a4136676d0a690c0d250d"
+        }
+      ],
+      "change": "Selected source, split and audit fields. Numeric values unchanged."
+    },
+    {
+      "path": "wildjailbreak/wj-tfidf/validation.json",
+      "sha256": "ad67fb6a892fe620ef145173b1a0cefc976b4381bc0b167ed2a170a5553af224",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-tfidf/validation.json",
+          "sha256": "ad67fb6a892fe620ef145173b1a0cefc976b4381bc0b167ed2a170a5553af224"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "wildjailbreak/wj-tfidf/validation-predictions.jsonl",
+      "sha256": "28f846c7c0ed93e9e0c73ded12817a755dcdebc468c8dfd238260c9808781b81",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-tfidf/validation-predictions.jsonl",
+          "sha256": "28f846c7c0ed93e9e0c73ded12817a755dcdebc468c8dfd238260c9808781b81"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "wildjailbreak/wj-tfidf/method.json",
+      "sha256": "10662bf3c6eee49fa0cdfb51c9d4dc57a1bd0262f9ca7e0f7dc2931341127064",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-tfidf/method.json:1",
+          "sha256": "2179437c7b087135762c4b020e7567e0641b455bb9281fd09c42bec0c38db307"
+        },
+        {
+          "record": "wildjailbreak/wj-tfidf/method.json:2",
+          "sha256": "a3e4388ae5b5be93ee89232bd8eabf1f629a7f8b3f62c07f096b0a19868b63db"
+        },
+        {
+          "record": "wildjailbreak/wj-tfidf/method.json:3",
+          "sha256": "d11d8c973c05206c2da8d13ac688fdcfe1ec5656cda2af0cbf889c5a7ab5ee1a"
+        },
+        {
+          "record": "wildjailbreak/wj-tfidf/method.json:environment",
+          "sha256": "9d884d5f318e9a29ced174f7e6932042ebdaf6c678a60523897ea66863eb2331"
+        },
+        {
+          "record": "wildjailbreak/wj-tfidf/method.json:model-source",
+          "sha256": "727be48dbe12912e86973d17d323963f1745254c36560695bddd18e2b0c0e2e5"
+        }
+      ],
+      "change": "Selected scientific settings, diagnostics, code defaults and core runtime versions; numeric values unchanged."
+    },
+    {
+      "path": "wildjailbreak/wj-tfidf/deployment.json",
+      "sha256": "21d4b2ce4ee421c0c091f1d2c437382b574fe8be51a6396b9f453cdd6b38defa",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-tfidf/deployment.json:1",
+          "sha256": "e9f81b8a6c6e00d70733c6f60b302e515f3c1550f274f6be6d232e457d058793"
+        }
+      ],
+      "change": "Removed run identifiers; numeric measurements unchanged."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-1ep/validation.json",
+      "sha256": "d6660e205dd9d8190329d9d3484b9e401508bc06edd4fbc8811d52125ff34b5b",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-1ep/validation.json",
+          "sha256": "d6660e205dd9d8190329d9d3484b9e401508bc06edd4fbc8811d52125ff34b5b"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-1ep/validation-predictions.jsonl",
+      "sha256": "01f9adccd1a1268766753eed05f8b034baf9febcf2d34c4577cba74c867424ed",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-1ep/validation-predictions.jsonl",
+          "sha256": "01f9adccd1a1268766753eed05f8b034baf9febcf2d34c4577cba74c867424ed"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-1ep/method.json",
+      "sha256": "90b6308788fc892e6545c8572e531bb8292b58b99382a342ef14ba414f4b848b",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-1ep/method.json:1",
+          "sha256": "2179437c7b087135762c4b020e7567e0641b455bb9281fd09c42bec0c38db307"
+        },
+        {
+          "record": "wildjailbreak/wj-deberta-1ep/method.json:2",
+          "sha256": "2b1a4b66f9d79be6ab59a65588a755a5e95975faca62d64ffae815c0f2f167ce"
+        },
+        {
+          "record": "wildjailbreak/wj-deberta-1ep/method.json:3",
+          "sha256": "2e8675dbf5435f1a654ec6784699b978f5629c01b96664617e6f0270a88edf3e"
+        },
+        {
+          "record": "wildjailbreak/wj-deberta-1ep/method.json:environment",
+          "sha256": "9d884d5f318e9a29ced174f7e6932042ebdaf6c678a60523897ea66863eb2331"
+        },
+        {
+          "record": "wildjailbreak/wj-deberta-1ep/method.json:model-source",
+          "sha256": "727be48dbe12912e86973d17d323963f1745254c36560695bddd18e2b0c0e2e5"
+        }
+      ],
+      "change": "Selected scientific settings, diagnostics, code defaults and core runtime versions; numeric values unchanged."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-1ep/deployment.json",
+      "sha256": "90ab799c8fca329f9cbfbad39449380f6fbf636fb800dbda4e4edc0fcab0fb61",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-1ep/deployment.json:1",
+          "sha256": "1348bfea891d27d4807701b075f92cb87059947a7b2254a7c3593b8c17cb8bc0"
+        }
+      ],
+      "change": "Removed run identifiers; numeric measurements unchanged."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-1ep/test.json",
+      "sha256": "a756a9e5e17c6069dd58594137bd726bcd0addf54bc97b0841c57578a01b7d6c",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-1ep/test.json:1",
+          "sha256": "49e22ef033f7c9d8da0578f4f8709d764e108bb63083e72a6856575b41c3ed4c"
+        }
+      ],
+      "change": "Kept overall and source-type metrics; omitted redundant per-row and source slices."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-1ep/test-predictions.jsonl",
+      "sha256": "458db2204a6aecae528d7dd8995779d7bfe7134b8b903d141f2e558bc07fb2a3",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-1ep/test-predictions.jsonl",
+          "sha256": "458db2204a6aecae528d7dd8995779d7bfe7134b8b903d141f2e558bc07fb2a3"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-2ep/validation.json",
+      "sha256": "37f6c4f69475b6e65291a2680448fe0f24ac5e70bf0f7accd7da884c4a76ceef",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-2ep/validation.json",
+          "sha256": "37f6c4f69475b6e65291a2680448fe0f24ac5e70bf0f7accd7da884c4a76ceef"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-2ep/validation-predictions.jsonl",
+      "sha256": "b672ea6bf95fc8934f13a6a46206adb528f3cc33d5d6a83d17b60939c781dbef",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-2ep/validation-predictions.jsonl",
+          "sha256": "b672ea6bf95fc8934f13a6a46206adb528f3cc33d5d6a83d17b60939c781dbef"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-2ep/method.json",
+      "sha256": "0c040f367e0b36c454bb578653eb48efe7fe2956be0fe0517aa5778fe41c9e9f",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-2ep/method.json:1",
+          "sha256": "1be5b1a54cbc52e849a3c0785dfc30b5709d233c515e666b8b0b6d15ab336394"
+        },
+        {
+          "record": "wildjailbreak/wj-deberta-2ep/method.json:2",
+          "sha256": "7402d657add029d940b9bc20e8fdd0c7f4b7104f3969a9b4e7677419ec5db90e"
+        },
+        {
+          "record": "wildjailbreak/wj-deberta-2ep/method.json:3",
+          "sha256": "e0e2d67434509a760797a799cacedc3409cf4802cf201be5a18fe7d909d1309d"
+        },
+        {
+          "record": "wildjailbreak/wj-deberta-2ep/method.json:environment",
+          "sha256": "9d884d5f318e9a29ced174f7e6932042ebdaf6c678a60523897ea66863eb2331"
+        }
+      ],
+      "change": "Selected scientific settings, diagnostics, code defaults and core runtime versions; numeric values unchanged."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-2ep/deployment.json",
+      "sha256": "7f2df897aacb670154060dedf21c50d355279dd9d89534f62d6e519dbe16c801",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-2ep/deployment.json:1",
+          "sha256": "30e050cbf1c076111ed244975aaaaa9c35699d41715a8b1139e988999f59643d"
+        }
+      ],
+      "change": "Removed run identifiers; numeric measurements unchanged."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-6ep/validation.json",
+      "sha256": "b440279705f3ae14c180926ac22acba2b88685fe735b9e675945887799ebe805",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-6ep/validation.json",
+          "sha256": "b440279705f3ae14c180926ac22acba2b88685fe735b9e675945887799ebe805"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-6ep/validation-predictions.jsonl",
+      "sha256": "7576fa207d7bc7d2aa65f6c18430f426940dfa349a3d34fadf8e3cfb97917b0c",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-6ep/validation-predictions.jsonl",
+          "sha256": "7576fa207d7bc7d2aa65f6c18430f426940dfa349a3d34fadf8e3cfb97917b0c"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-6ep/method.json",
+      "sha256": "bfda8ddacbe548b6ae05164abd4edfb4e40edd4cbe72bf2f0e65c515672b3f04",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-6ep/method.json:1",
+          "sha256": "e348d03d6d549dcd577af3d542fff379cec948c24d088fc399ee287d94daf07b"
+        },
+        {
+          "record": "wildjailbreak/wj-deberta-6ep/method.json:2",
+          "sha256": "81206c3ed4bf217788b6af7899eb9eaedc5bf8c0c9504ece78b9207ce141ba90"
+        },
+        {
+          "record": "wildjailbreak/wj-deberta-6ep/method.json:3",
+          "sha256": "5ed0d93cfa31a16f9faa6bbaa46b745e1cdb15f4109a5bf96d2cbc34179455ae"
+        },
+        {
+          "record": "wildjailbreak/wj-deberta-6ep/method.json:environment",
+          "sha256": "9d884d5f318e9a29ced174f7e6932042ebdaf6c678a60523897ea66863eb2331"
+        }
+      ],
+      "change": "Selected scientific settings, diagnostics, code defaults and core runtime versions; numeric values unchanged."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-6ep/deployment.json",
+      "sha256": "22e5b60e19f41d4a53ac2bdcf32d33a65edb5db2bf94933bca3e8bf9853ab389",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-6ep/deployment.json:1",
+          "sha256": "03df685e854b964709a76d3a87899d609c381d19d25ab1b854f9418e06716897"
+        }
+      ],
+      "change": "Removed run identifiers; numeric measurements unchanged."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-6ep/test.json",
+      "sha256": "c3987c5b519e5d1657bc099855dd7d2c7b044ff14f1251d24cee564c12dcf871",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-6ep/test.json:1",
+          "sha256": "2612ed76b3e9ea3d890c449159359980a0228ec438c7e2c48308379a33ff0790"
+        }
+      ],
+      "change": "Kept overall and source-type metrics; omitted redundant per-row and source slices."
+    },
+    {
+      "path": "wildjailbreak/wj-deberta-6ep/test-predictions.jsonl",
+      "sha256": "734a8723d5934cb912e1fa9346080dc64d6ca5a241041b9ed6933eb258b64139",
+      "source_records": [
+        {
+          "record": "wildjailbreak/wj-deberta-6ep/test-predictions.jsonl",
+          "sha256": "734a8723d5934cb912e1fa9346080dc64d6ca5a241041b9ed6933eb258b64139"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "wildjailbreak/epochs.json",
+      "sha256": "0ef5df9835f8955dd5766aaf7a1c4480f4124929e2a838720e4bfe8fbc9a8a91",
+      "source_records": [
+        {
+          "record": "wildjailbreak/epochs.json",
+          "sha256": "0ef5df9835f8955dd5766aaf7a1c4480f4124929e2a838720e4bfe8fbc9a8a91"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "wildjailbreak/paired-validation.json",
+      "sha256": "6e07990be215c614c8b53aed1a45638fa85299dbff9ff88c4392c569cf75d3fb",
+      "source_records": [
+        {
+          "record": "wildjailbreak/paired-validation.json:1",
+          "sha256": "317e4908d4dbc0db481f97bbfdffa349199a140005aba0f3b3b62440aff92c52"
+        },
+        {
+          "record": "wildjailbreak/paired-validation.json:2",
+          "sha256": "5ee1a00383469bc4bafae59a3a28b6fabe4347eca177897dd80c3244137f0a41"
+        }
+      ],
+      "change": "Selected paired counts. No raw prompts."
+    },
+    {
+      "path": "wildjailbreak/error-review.json",
+      "sha256": "80fd1fd2391a5937a903083a30c65eeee81fb17d5e79ed0dc93389baa77c8811",
+      "source_records": [
+        {
+          "record": "wildjailbreak/error-review.json:1",
+          "sha256": "6d94129c07df998d72699a512b9e8377ab9c2f743f64eac35fe4fe8ffd0eb569"
+        }
+      ],
+      "change": "Neutral summaries of recorded judgments. No author identity, transcript or prompt text."
+    },
+    {
+      "path": "wildjailbreak/chronology.json",
+      "sha256": "b88d18e9b9c8d20c1903c6df1ce2e6b36904758b134b8c55c123640ac6951607",
+      "source_records": [
+        {
+          "record": "wildjailbreak/chronology.json:1",
+          "sha256": "871fddd7cf75d4d405cbbac96b3d022230f10e4d8a18cb68a7a28ee81a16a318"
+        },
+        {
+          "record": "wildjailbreak/chronology.json:2",
+          "sha256": "c6e1a899e16454024ee66b316a08947314f31d6eb661605b19e7d531242b5e2b"
+        },
+        {
+          "record": "wildjailbreak/chronology.json:3",
+          "sha256": "1566f555cdd3ad25e5b4c7c241b7a89028bee5c002d9715832b9fb278f2dcd9f"
+        },
+        {
+          "record": "wildjailbreak/chronology.json:4",
+          "sha256": "724fdd5fdbfbda367c8932050a8e6dac1b1872c1e1e7f6869ef8e442c7f5d40d"
+        },
+        {
+          "record": "wildjailbreak/chronology.json:5",
+          "sha256": "6f7ac2c699b3b57e06ab2a07653ec02b6687f7eafad5405a7851679e48035fc2"
+        },
+        {
+          "record": "wildjailbreak/chronology.json:6",
+          "sha256": "61b1ca5a9a6e0c276cc636b9ef88a163cc6be275abf95e7adaca63c0d12e63a2"
+        },
+        {
+          "record": "wildjailbreak/chronology.json:7",
+          "sha256": "7a3102c11d0ccb3cb286cd2a918a4990d7c497dd954eb97118a2d98785613ee6"
+        },
+        {
+          "record": "wildjailbreak/chronology.json:8",
+          "sha256": "7b92fa9381e9700a6096d51e995898aeb0f17d3f621ac9a7f0b1fe4c6039a566"
+        },
+        {
+          "record": "wildjailbreak/chronology.json:9",
+          "sha256": "7b2b53fe612fb053113e354c36ada6ee631a30e3ef3a84d3852a3aeff216c846"
+        }
+      ],
+      "change": "Neutral series IDs and decision summaries. Exact thresholds, times, parent relationship and exposure retained."
+    },
+    {
+      "path": "xstest/results.json",
+      "sha256": "00c314dee9a22e34c4df239b437b58f12bce97775a1f616629ad83dc01bbc41f",
+      "source_records": [
+        {
+          "record": "xstest/results.json:1",
+          "sha256": "00c314dee9a22e34c4df239b437b58f12bce97775a1f616629ad83dc01bbc41f"
+        }
+      ],
+      "change": "Selected result fields. Numeric values unchanged."
+    },
+    {
+      "path": "xstest/source.json",
+      "sha256": "c6e2d75a63c3edb7a359f79fb88206b9c19c6dfccb5ea585f104bcb644a34b08",
+      "source_records": [
+        {
+          "record": "xstest/source.json",
+          "sha256": "c6e2d75a63c3edb7a359f79fb88206b9c19c6dfccb5ea585f104bcb644a34b08"
+        }
+      ],
+      "change": "Unchanged bytes."
+    },
+    {
+      "path": "xstest/method.json",
+      "sha256": "e80e10f237f9e066a32c95179419e264ba40c140579d49966cef1011159e35b5",
+      "source_records": [
+        {
+          "record": "xstest/method.json:1",
+          "sha256": "f1478daba01dc123c0f429308fd057d5add2344ffef432b1b5bba709a5f2b9d0"
+        }
+      ],
+      "change": "Scientific settings; omitted wall-clock administration."
+    },
+    {
+      "path": "wildjailbreak/historical-verification.json",
+      "sha256": "c6d2afc581e74e59611fd6112236764cfc1ab7a84973893f42e99430f861a084",
+      "source_records": [
+        {
+          "record": "wildjailbreak/historical-verification.json:1",
+          "sha256": "d8f9355328b19e983960949d70913ca7aa18da6d25c43e3e86084295aa466cec"
+        },
+        {
+          "record": "wildjailbreak/historical-verification.json:2",
+          "sha256": "8dfba72602d7e79af5f3d192cbac43e0ca12c764dc5e4ef1c646afc8dd561238"
+        },
+        {
+          "record": "wildjailbreak/historical-verification.json:3",
+          "sha256": "b802aa7cd8f791dec3effe89b424d9589df98fda690b1927ad79755d791b00ba"
+        },
+        {
+          "record": "wildjailbreak/historical-verification.json:4",
+          "sha256": "f7c8bf07d597b27ce21e3e6bd62e379646718416d16e6eed9792344000c9f4a2"
+        }
+      ],
+      "change": "Selected historical reload results; removed process paths and operational records."
+    },
+    {
+      "path": "wildjailbreak/split-labels.jsonl",
+      "sha256": "de2ca671cbf25a75ac3960b7c848cd5ac73acdb899058b50024ce43f7a239bc2",
+      "source_records": [
+        {
+          "record": "wildjailbreak/split-labels.jsonl:train",
+          "sha256": "fba6fcf1c6d6d238a2f9df6a414475eb40ab4b422e0b1319be9352e9f2af081b"
+        },
+        {
+          "record": "wildjailbreak/split-labels.jsonl:validation",
+          "sha256": "638931f1fe2eea84db678fc06f357e59a9b298d94338c43ad93d4a646525a635"
+        },
+        {
+          "record": "wildjailbreak/split-labels.jsonl:test",
+          "sha256": "5e7bd1e48658859e58c5cea10801f3a4b98d28bad5d2944d94280733e20b5569"
+        }
+      ],
+      "change": "Selected public row IDs, labels, groups and source types; no prompt text."
+    },
+    {
+      "path": "xstest/numerical-followup.json",
+      "sha256": "2b1c01bc5754215797e3e330f98892d84a9f43b24d850b60ad4949d0beaf478b",
+      "source_records": [
+        {
+          "record": "xstest/numerical-followup.json",
+          "sha256": "69e28ff10bee75cc268bc158d1d7a87452013542f71671183e527f2d35dbe5b4"
+        }
+      ],
+      "change": "Neutral summary of a synthetic diagnostic; numeric results unchanged."
+    }
+  ]
+}

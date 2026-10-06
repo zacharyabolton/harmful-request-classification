@@ -1,0 +1,11 @@
+{
+  "seed": 42,
+  "max_rows": 450,
+  "max_chars": 12000,
+  "near_duplicate_jaccard": 0.8,
+  "max_features": 20000,
+  "C": 1.0,
+  "max_iter": 1000,
+  "device": "cpu",
+  "threshold_objective": "max_validation_f1_then_min_fpr_then_highest_threshold"
+}

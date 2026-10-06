@@ -1,0 +1,18 @@
+{
+  "passes": [
+    {
+      "method": "8 rarest-token index, at most 256 postings/token; stable ID order",
+      "candidate_pairs": 91859,
+      "comparisons": 47052,
+      "cap": 2000000,
+      "exact_coverage": "all selected rows; entire eligible source linked before allocation",
+      "near_coverage": "nonexhaustive",
+      "seed": 42,
+      "cross_split_pairs": []
+    }
+  ],
+  "excluded_development_components": [],
+  "known_parent_and_exact_components": 99898,
+  "official_eval_used": false,
+  "source_level_exposure": "Public card examples previously viewed; exact exposed IDs unavailable; no semantic independence claim."
+}

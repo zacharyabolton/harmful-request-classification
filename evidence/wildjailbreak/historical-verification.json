@@ -1,0 +1,16 @@
+{
+  "wj-deberta-1ep": {
+    "rows": 1000,
+    "labels_match": true,
+    "score_atol": 1e-05,
+    "cpu_predict_seconds": 272.688118358,
+    "initial_cpu_timeout_seconds": 120
+  },
+  "wj-deberta-6ep": {
+    "rows": 1000,
+    "labels_match": true,
+    "score_atol": 1e-05,
+    "cpu_predict_seconds": 274.4858127319999
+  },
+  "scope": "Historical reload checks. Current export checks are reported separately."
+}

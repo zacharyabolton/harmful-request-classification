@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "seed": 42,
+  "max_chars": 12000,
+  "max_rows": 6000,
+  "max_features": 20000,
+  "C": 1.0,
+  "max_iter": 1000,
+  "solver": "liblinear",
+  "objective": "recall_at_fpr",
+  "max_fpr": 0.05,
+  "device": "cpu",
+  "encoder_device": "cuda",
+  "encoder_revision": "4b419818330868dff6a60ad3e6b1c730f8b8c0c6",
+  "fixture_only": false,
+  "run_budget_seconds": 7200
+}
