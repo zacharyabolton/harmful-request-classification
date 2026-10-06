@@ -1,0 +1,2 @@
+-r requirements.colab.txt
+laya @ git+https://github.com/NandhaKishorM/laya.git@a4a8921afebfd852bba0000475cfb6ab737a124c

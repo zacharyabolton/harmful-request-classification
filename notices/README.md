@@ -8,4 +8,6 @@ WildJailbreak: Liwei Jiang and coauthors, Allen Institute for AI (2024). [Pinned
 
 DeBERTa-v3-xsmall: Microsoft. [Pinned model card](https://huggingface.co/microsoft/deberta-v3-xsmall/blob/4b419818330868dff6a60ad3e6b1c730f8b8c0c6/README.md), revision `4b419818330868dff6a60ad3e6b1c730f8b8c0c6`. Its MIT terms cover the bundled encoder and tokenizer; retain the [Microsoft license](DeBERTa-LICENSE.txt). Encoder weights were fine-tuned on WildJailbreak. The TF-IDF vocabulary also derives from that data.
 
+Laya: Convai Innovations. [Source](https://github.com/NandhaKishorM/laya/tree/a4a8921afebfd852bba0000475cfb6ab737a124c) and [base weights](https://huggingface.co/convaiinnovations/laya/tree/7b928d828b7b0e022f929d9bd2e44165aa270148) use [Apache 2.0](https://github.com/NandhaKishorM/laya/blob/a4a8921afebfd852bba0000475cfb6ab737a124c/LICENSE). Fine-tuned on WildJailbreak. Laya source and weights are not bundled.
+
 Upstream terms checked 2026-10-06 UTC.
